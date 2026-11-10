@@ -138,3 +138,4 @@ The Hardhat test suite (`test/BOTHOTPotato.test.ts`) verifies 15 scenarios acros
 - Automated round-scheduler contracts or community-triggered round restarts with configurable cooldowns
 
 All potential extensions retain the core principle of **BOT Hot Potato**: pure on-chain arcade chaos powered solely by standard network gas fees.
+

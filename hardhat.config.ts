@@ -4,7 +4,8 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const rawPrivateKey = process.env.DEPLOYER_PRIVATE_KEY?.trim() ?? "";
+const rawPrivateKey =
+  (process.env.DEPLOYER_PRIVATE_KEY || process.env.PRIVATE_KEY)?.trim() ?? "";
 const deployerAccounts = rawPrivateKey
   ? [rawPrivateKey.startsWith("0x") ? rawPrivateKey : `0x${rawPrivateKey}`]
   : [];

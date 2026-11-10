@@ -6,7 +6,7 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   if (!deployer) {
     throw new Error(
-      "Missing DEPLOYER_PRIVATE_KEY in .env. Add your funded BOT Chain Testnet private key first."
+      "Missing DEPLOYER_PRIVATE_KEY or PRIVATE_KEY in .env. Add your funded BOT Chain Testnet private key first."
     );
   }
 
