@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b0908;
+  color: #fff7ed;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(255, 106, 0, 0.16), transparent 48%),
+    radial-gradient(circle at 85% 80%, rgba(255, 214, 10, 0.08), transparent 40%),
+    linear-gradient(rgba(255, 158, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 158, 0, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+.arcade-card {
+  background: linear-gradient(180deg, rgba(29, 23, 18, 0.96) 0%, rgba(19, 15, 12, 0.98) 100%);
+  border: 1px solid #36271b;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+.arcade-btn {
+  box-shadow: 0 4px 0 #9a3412;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.15s ease;
+}
+
+.arcade-btn:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.arcade-btn:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #9a3412;
+}
+

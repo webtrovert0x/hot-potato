@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+frontend/.env
+frontend/.env.local
+
+# Hardhat artifacts & cache
+cache/
+artifacts/
+typechain-types/
+dist/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+
+# OS & logs
+.DS_Store
+*.log
+npm-debug.log*
+

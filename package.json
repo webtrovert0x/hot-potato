@@ -1,0 +1,22 @@
+{
+  "name": "bot-hot-potato",
+  "version": "1.0.0",
+  "description": "BOT Hot Potato - Multiplayer on-chain hot potato game on BOT Chain Testnet",
+  "private": true,
+  "scripts": {
+    "compile": "CI=true TS_NODE_PROJECT=tsconfig.hardhat.json npx hardhat compile",
+    "test:contracts": "CI=true TS_NODE_PROJECT=tsconfig.hardhat.json npx hardhat test",
+    "deploy:testnet": "CI=true TS_NODE_PROJECT=tsconfig.hardhat.json npx hardhat run scripts/deploy.ts --network botTestnet",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "lint": "npm --prefix frontend run lint"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.18",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
